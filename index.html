@@ -23,6 +23,11 @@
     <section id="upload">
         <h2>Fotos hochladen</h2>
         <input type="file" id="fileInput" accept="image/*">
+        <label for="category">Kategorie:</label>
+        <select id="category">
+            <option value="nature">Natur</option>
+            <option value="events">Veranstaltungen</option>
+        </select>
         <button onclick="uploadPhoto()">Hochladen</button>
     </section>
 
@@ -30,7 +35,6 @@
         <h2>Fotos herunterladen</h2>
         <select id="topicSelector" onchange="filterByTopic()">
             <option value="all">Alle Themen</option>
-            <!-- Weitere Themen nach Bedarf hinzufügen -->
             <option value="nature">Natur</option>
             <option value="events">Veranstaltungen</option>
         </select>
@@ -52,7 +56,14 @@
         <!-- Veranstaltungskalender hier einfügen -->
     </section>
 
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Für weitere Informationen kontaktieren Sie uns direkt über WhatsApp:</p>
+        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
+
 
